@@ -18,16 +18,12 @@ if [[ ! -f $exe ]]; then
   fi
 fi
 
-local comp_dir="$ZSH_DVM_DIR/completions"
+local comp_dir="$ZSH_DVM_DIR"
 local comp_file="$comp_dir/_dvm"
 
 if [[ -f $exe ]]; then
   export PATH="$dvm_dir:$PATH"
   if [[ ! -f $comp_file ]]; then
-    mkdir -p $comp_dir
-    if ! ((${fpath[(Ie)$comp_dir]})); then
-      fpath=($comp_dir $fpath)
-    fi
     $exe completions zsh > $comp_file
   fi
 fi
