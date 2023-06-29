@@ -1,7 +1,5 @@
 #!/usr/bin/env zsh
 
-set -e 
-
 local dvm_dir="${DVM_DIR:-$HOME/.dvm}"
 local dvm_bin_dir="$dvm_dir/bin"
 local exe="$dvm_bin_dir/dvm"
