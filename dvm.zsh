@@ -28,7 +28,7 @@ if [[ -f $exe ]]; then
     if ! ((${fpath[(Ie)$comp_dir]})); then
       fpath=($comp_dir $fpath)
     fi
-    dvm completions zsh > $comp_file
+    $exe completions zsh > $comp_file
   fi
 fi
 
