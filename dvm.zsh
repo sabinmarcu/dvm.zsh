@@ -14,7 +14,6 @@ if [[ ! -f $exe ]]; then
     echo "\033[32mDone!\033[0m"
   else
     echo "\033[31mThere was an error installing DVM!\033[0m"
-    return 1
   fi
 fi
 
