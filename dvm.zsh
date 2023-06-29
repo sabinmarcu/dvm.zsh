@@ -18,6 +18,7 @@ fi
 
 if [[ -f $exe ]]; then
   export PATH="$dvm_dir:$PATH"
+  eval "$(dvm completions zsh)"
 fi
 
 true
