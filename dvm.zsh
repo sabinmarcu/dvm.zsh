@@ -20,5 +20,3 @@ fi
 if [[ -f $exe ]]; then
   export PATH="$dvm_dir:$PATH"
 fi
-
-true
